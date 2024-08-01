@@ -1,0 +1,22 @@
+div {
+  display: none;
+}
+
+body::after {
+  background-color: #000;
+  content: "Stop Youtube";
+  color: #dff9fb;
+  position: absolute;
+  font-size: 12rem;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+}

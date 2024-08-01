@@ -1,0 +1,10 @@
+{
+  "name": "stop-youtube",
+  "description": "Stop Youtube",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": ["tabs", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "dist/background.js"
+  }
+}
