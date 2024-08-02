@@ -6,11 +6,13 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "tsc",
-    "watch": "tsc --watch"
+    "build": "node ./scripts/build.mjs",
+    "watch": "node ./scripts/watch.mjs"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.269",
-    "typescript": "^5.5.4"
+    "@types/node": "^22.1.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
   }
 }
