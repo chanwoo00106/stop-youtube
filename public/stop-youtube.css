@@ -4,7 +4,7 @@ div {
 
 body::after {
   background-color: #000;
-  content: "Stop Youtube";
+  content: "STOP YOUTUBE";
   color: #dff9fb;
   position: absolute;
   font-size: 12rem;
