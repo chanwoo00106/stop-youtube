@@ -19,6 +19,10 @@ body {
   width: 15rem;
 }
 
+.section:nth-of-type(odd) {
+  margin-bottom: 0.5rem;
+}
+
 .label {
   font-weight: 500;
 }
