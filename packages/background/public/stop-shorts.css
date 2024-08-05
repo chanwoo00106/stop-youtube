@@ -1,0 +1,6 @@
+#contents .style-scope.ytd-rich-section-renderer,
+#contents #scroll-outer-container,
+#contents #title-container,
+a[title="Shorts"] {
+  display: none !important;
+}

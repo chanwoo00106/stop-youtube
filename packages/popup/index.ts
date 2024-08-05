@@ -23,3 +23,16 @@ if (screenBlock instanceof HTMLInputElement) {
     });
   });
 }
+
+const shortsBlock = document.querySelector(".shorts-block");
+if (shortsBlock instanceof HTMLInputElement) {
+  chrome.storage.local.get(["shorts-block"], (result) => {
+    shortsBlock.defaultChecked = result["shorts-block"] === "true";
+  });
+
+  shortsBlock?.addEventListener("click", () => {
+    chrome.storage.local.set({
+      "shorts-block": `${shortsBlock.checked}`,
+    });
+  });
+}

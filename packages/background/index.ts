@@ -1,3 +1,7 @@
+import StopShorts from "./stop-shorts";
+
+StopShorts();
+
 chrome.storage.local.get(["access-block"], (result) => {
   if (result["access-block"] !== "true") return;
 
