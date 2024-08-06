@@ -4,6 +4,18 @@ body {
   margin: 0;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  object-fit: cover;
+  width: 2rem;
+  height: 2rem;
+}
+
 .title {
   white-space: nowrap;
   margin-bottom: 1rem;
