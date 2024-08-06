@@ -3,7 +3,7 @@
   "description": "Stop Youtube",
   "version": "0.1",
   "manifest_version": 3,
-  "permissions": ["tabs", "scripting", "activeTab", "storage"],
+  "permissions": ["tabs", "scripting", "storage"],
   "host_permissions": ["https://www.youtube.com/*"],
   "background": {
     "service_worker": "dist/background/index.js"
