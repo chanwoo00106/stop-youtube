@@ -5,5 +5,10 @@ export default defineConfig({
   root: __dirname,
   build: {
     outDir: "../../dist/popup",
+    lib: {
+      entry: "./index.html",
+      formats: ["es"],
+      fileName: "[name]",
+    },
   },
 });
