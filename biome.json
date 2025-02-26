@@ -13,5 +13,8 @@
 	},
 	"organizeImports": {
 		"enabled": true
+	},
+	"files": {
+		"ignore": ["dist/*"]
 	}
 }
