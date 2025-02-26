@@ -1,5 +1,8 @@
 const stopShorts = () => {
   chrome.tabs.query({ url: "https://www.youtube.com/*" }, async (tabs) => {
+    const result = await chrome.storage.local.get(["shorts-block"]);
+    if (result["shorts-block"] !== "true") return;
+
     tabs.forEach((tab) => {
       if (!tab.id) return;
 
