@@ -1,8 +1,5 @@
 const stopScreen = () => {
   chrome.tabs.onUpdated.addListener(async (tabId) => {
-    const { url } = await chrome.tabs.get(tabId);
-    if (!url?.includes("https://www.youtube.com/")) return;
-
     chrome.storage.local.get(["screen-block"], (result) => {
       if (result["screen-block"] !== "true") return;
 
