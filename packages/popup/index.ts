@@ -36,3 +36,16 @@ if (shortsBlock instanceof HTMLInputElement) {
     });
   });
 }
+
+const thumbnailBlock = document.querySelector(".thumbnail-block");
+if (thumbnailBlock instanceof HTMLInputElement) {
+  chrome.storage.local.get(["thumbnail-block"], (result) => {
+    thumbnailBlock.defaultChecked = result["thumbnail-block"] === "true";
+  });
+
+  thumbnailBlock?.addEventListener("click", () => {
+    chrome.storage.local.set({
+      "thumbnail-block": `${thumbnailBlock.checked}`,
+    });
+  });
+}

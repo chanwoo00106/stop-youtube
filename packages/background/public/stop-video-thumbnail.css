@@ -1,0 +1,4 @@
+.ytd-rich-item-renderer .ytd-rich-grid-media .ytd-rich-grid-media .yt-core-image--loaded,
+img.yt-core-image.yt-core-image--fill-parent-height.yt-core-image--fill-parent-width.yt-core-image--content-mode-scale-aspect-fill.yt-core-image--loaded {
+  filter: blur(20px);
+}
