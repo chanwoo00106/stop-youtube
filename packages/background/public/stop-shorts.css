@@ -1,6 +1,4 @@
-#contents .style-scope.ytd-rich-section-renderer,
-#contents #scroll-outer-container,
-#contents #title-container,
+ytd-reel-shelf-renderer.style-scope.ytd-item-section-renderer:has(ytm-shorts-lockup-view-model-v2.shortsLockupViewModelHost.yt-horizontal-list-renderer),
 a[title="Shorts"] {
   display: none !important;
 }
