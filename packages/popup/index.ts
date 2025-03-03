@@ -49,3 +49,16 @@ if (thumbnailBlock instanceof HTMLInputElement) {
     });
   });
 }
+
+const recommendedBlock = document.querySelector(".recommended-videos-block");
+if (recommendedBlock instanceof HTMLInputElement) {
+  chrome.storage.local.get(["recommended-block"], (result) => {
+    recommendedBlock.defaultChecked = result["recommended-block"] === "true";
+  });
+
+  recommendedBlock?.addEventListener("click", () => {
+    chrome.storage.local.set({
+      "recommended-block": `${recommendedBlock.checked}`,
+    });
+  });
+}
