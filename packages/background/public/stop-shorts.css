@@ -1,4 +1,5 @@
 ytd-reel-shelf-renderer.style-scope.ytd-item-section-renderer:has(ytm-shorts-lockup-view-model-v2.shortsLockupViewModelHost.yt-horizontal-list-renderer),
-a[title="Shorts"] {
+a[title="Shorts"],
+#dismissible.style-scope.ytd-rich-shelf-renderer {
   display: none !important;
 }
