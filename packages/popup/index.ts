@@ -62,3 +62,16 @@ if (recommendedBlock instanceof HTMLInputElement) {
     });
   });
 }
+
+const mainListBlock = document.querySelector(".main-list-block");
+if (mainListBlock instanceof HTMLInputElement) {
+  chrome.storage.local.get(["stop-main-list"], (result) => {
+    mainListBlock.defaultChecked = result["stop-main-list"] === "true";
+  });
+
+  mainListBlock?.addEventListener("click", () => {
+    chrome.storage.local.set({
+      "stop-main-list": `${mainListBlock.checked}`,
+    });
+  });
+}
