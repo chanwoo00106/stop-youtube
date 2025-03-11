@@ -1,3 +1,5 @@
-ytd-rich-grid-renderer:has(#dismissible.style-scope.ytd-rich-grid-media):not(:has(#subscribe-button.style-scope.ytd-shelf-renderer)):not(:has(yt-formatted-string[title="Latest"])) {
-  display: none !important;
+ytd-rich-grid-renderer:has(#dismissible.style-scope.ytd-rich-grid-media):not(
+		:has(#subscribe-button.style-scope.ytd-shelf-renderer)
+	):has(yt-formatted-string[title="All"]) {
+	display: none !important;
 }
