@@ -1,7 +1,7 @@
 {
 	"name": "stop-youtube",
 	"description": "This extension helps to restrain access to YouTube.",
-	"version": "0.6",
+	"version": "0.7",
 	"manifest_version": 3,
 	"permissions": ["tabs", "scripting", "storage"],
 	"host_permissions": ["https://www.youtube.com/*"],
